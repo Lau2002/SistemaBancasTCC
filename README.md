@@ -65,7 +65,7 @@ Toda vez que é realizada alguma alteração de código que impactará a estrutu
 
 -> A utilização do Postman será de grande auxílio para verificar as chamadas do métodos da api
 -> Link de instalação: https://www.postman.com/downloads/
--> Já há dois endpoints de exemplo no código inicial:
+-> Já há três endpoints de exemplo no código inicial:
 
 http://localhost:8000/api/professor/getProfessores
 
