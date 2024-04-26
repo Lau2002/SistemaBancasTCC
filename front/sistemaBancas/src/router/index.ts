@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
-import Blank from '@/views/Blank.vue'
-
+import CadastrarProfessor from '../views/CadastrarProfessor.vue'
+import CadastrarProfessores from '../views/CadastrarProfessores.vue'
+import RemoverProfessor from '../views/RemoverProfessor.vue'
+import GerarBancas from '../views/GerarBancas.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -12,17 +13,24 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: AboutView
+      path: '/cadastrarProfessor',
+      name: 'cadastrarProfessor',
+      component: CadastrarProfessor
     },
     {
-      path: '/blank',
-      name: 'blank',
-      component: Blank
+      path: '/cadastrarProfessores',
+      name: 'cadastrarProfessores',
+      component: CadastrarProfessores
+    },
+    {
+      path: '/removerProfessor',
+      name: 'removerProfessor',
+      component: RemoverProfessor
+    },
+    {
+      path: '/gerarBancas',
+      name: 'gerarBancas',
+      component: GerarBancas
     }
   ]
 })

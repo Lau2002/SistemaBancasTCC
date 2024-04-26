@@ -1,4 +1,4 @@
-<script></script>
+<script setup lang="ts"></script>
 <template>
     <div class="about">
     <h1>This is a blank page</h1>
