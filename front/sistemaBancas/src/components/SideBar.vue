@@ -14,7 +14,7 @@ export default {
     <div id="app">
   
       <!-- Barra lateral -->
-      <div class="sidebar">
+      <nav class="sidebar">
         <!-- Conteúdo da barra lateral aqui -->
         <div class="logo-container">
             <img src="@/assets/logo-unisinos-menu.png" alt="Logo Unisinos">
@@ -42,14 +42,10 @@ export default {
             <li class="item">Registrar TCC</li>
           <li class="item">Visualizar Minha Banca</li>
         </ul>
-        
-      </div>
-  
-      <!-- Conteúdo principal -->
-      <div class="main-content">
-        <!-- Conteúdo principal do seu aplicativo aqui -->
-      </div>
+      </nav>
+
     </div>
+    <RouterView />
   </template>
 
   

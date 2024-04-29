@@ -25,9 +25,38 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+  h1 {
+    padding-top: 40px;
+    padding-left: 350px;
+    color: #214099;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  form {
+    padding-top: 20px;
+    padding-left: 380px;
+  }
+
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+
+  .btn-primary {
+    background-color: #214099;
+  }
+
+  .form-group {
+    padding-bottom: 25px;
+  }
+
+  .form-control {
+    height: 40px;
+    width: 500px;
+    border-color: #989A9D;
+    border-radius: 4px;
   }
 
   #app {
