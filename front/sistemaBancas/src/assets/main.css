@@ -1,7 +1,6 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
@@ -46,6 +45,7 @@ a,
 
   .btn-primary {
     background-color: #214099;
+    width: 100px;
   }
 
   .form-group {
@@ -59,9 +59,16 @@ a,
     border-radius: 4px;
   }
 
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    padding: 0;
+    margin: 0;
   }
 }

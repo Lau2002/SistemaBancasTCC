@@ -1,16 +1,18 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import SideBar from './components/SideBar.vue'
+import { ref, provide } from 'vue';
+import SideBar from './components/SideBar.vue';
+import Login from './views/Login.vue';
+
+let isLoggedIn = ref(false);
 
 </script>
 
 <template>
-  <aside>
-      <SideBar/>
-  </aside>
-    <body></body>
+   <SideBar v-if="isLoggedIn"></SideBar>
+   <Login v-else @login="isLoggedIn = true"></Login>
 </template>
 
 <style scoped>
 
 </style>
+ 

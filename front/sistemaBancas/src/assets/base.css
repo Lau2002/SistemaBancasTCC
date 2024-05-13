@@ -25,10 +25,9 @@
 /* semantic color variables for this project */
 
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
   :root {
     --color-background: var(--vt-c-white);
-    --color-text: var(--vt-c-black);
   }
 }
 
@@ -45,15 +44,10 @@ body {
   min-width: 80vh;
   color: var(--color-text);
   background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 aside {
