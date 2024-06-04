@@ -1,9 +1,19 @@
 <script>
 export default {
+    data() {
+    return {
+      userType: 'aluno' // Altere isso para 'user' ou qualquer outro valor para testar
+    }
+  },
   methods: {
     validarLogin() {
       this.$emit('login');
-      this.$router.push('/cadastrarProfessor');
+      if (this.userType === 'coordenador') 
+        this.$router.push('/cadastrarProfessor');
+        else if (this.userType === 'professor')
+        this.$router.push('/registrarHorarios');
+        else if(this.userType === 'aluno')
+        this.$router.push('/registrarTCC')
     }
   }
 }
