@@ -2,9 +2,11 @@
 
 <template>
     <body>
-        <div class="titulo">
-            <h1>Remover Professor</h1>
-        </div>
+        <main>
+            <div class="titulo">
+                <h1>Remover Professor</h1>
+            </div>
+        </main>
     </body>
 </template>
 

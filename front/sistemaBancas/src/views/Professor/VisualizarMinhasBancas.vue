@@ -4,8 +4,12 @@
     <body>
         <main>
             <div class="titulo">
-                <h1>Gerar Bancas</h1>
+                <h1>Visualizar Minhas Bancas</h1>
             </div>
         </main>
     </body>
+    
 </template>
+
+<style scoped>
+</style>

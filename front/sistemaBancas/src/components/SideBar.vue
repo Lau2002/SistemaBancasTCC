@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 export default {
   data() {
     return {
-      userType: 'coordenador' // Altere isso para 'user' ou qualquer outro valor para testar
+      userType: 'aluno' // Altere isso para 'user' ou qualquer outro valor para testar
     }
   }
 }
@@ -35,11 +35,17 @@ export default {
           </li>
         </ul>
         <ul class="lista" v-else-if="userType === 'professor'">
-          <li class="item">Selecionar Meus Horários</li>
-          <li class="item">Visualizar Minhas Bancas</li>
+          <li class="item">
+            <RouterLink to="/registrarHorarios">Registrar Meus Horários</RouterLink>
+          </li>
+          <li class="item">
+            <RouterLink to="/visualizarMinhasBancas">Visualizar Minhas Bancas</RouterLink>
+          </li>
         </ul>
-        <ul class="lista" v-else>
-            <li class="item">Registrar TCC</li>
+        <ul class="lista" v-else-if="userType === 'aluno'">
+            <li class="item">
+              <RouterLink to="/registrarTCC">Registrar TCC</RouterLink>
+            </li>
           <li class="item">Visualizar Minha Banca</li>
         </ul>
       </nav>
