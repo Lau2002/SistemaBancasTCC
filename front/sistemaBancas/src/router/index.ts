@@ -6,7 +6,8 @@ import GerarBancas from '@/views/Coordenador/GerarBancas.vue'
 import RegistrarHorarios from '@/views/Professor/RegistrarHorarios.vue'
 import VisualizarMinhasBancas from '@/views/Professor/VisualizarMinhasBancas.vue'
 import RegistrarTCC from '@/views/Aluno/RegistrarTCC.vue'
-import Login from '../views/Login.vue'
+import VisualizarMinhaBanca from '@/views/Aluno/VisualizarMinhaBanca.vue'
+import Login from '@/views/Login.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -48,6 +49,11 @@ const router = createRouter({
       path: '/registrarTCC',
       name: 'registrarTCC',
       component: RegistrarTCC
+    },
+    {
+      path: '/visualizarMinhaBanca',
+      name: 'visualizarMinhaBanca',
+      component: VisualizarMinhaBanca
     },
     {
       path: '/login',

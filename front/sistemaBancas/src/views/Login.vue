@@ -2,7 +2,7 @@
 export default {
     data() {
     return {
-      userType: 'aluno' // Altere isso para 'user' ou qualquer outro valor para testar
+      userType: 'professor' 
     }
   },
   methods: {

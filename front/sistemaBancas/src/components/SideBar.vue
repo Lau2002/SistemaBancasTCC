@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 export default {
   data() {
     return {
-      userType: 'aluno' // Altere isso para 'user' ou qualquer outro valor para testar
+      userType: 'professor' 
     }
   }
 }
@@ -12,10 +12,7 @@ export default {
 
 <template>
     <div id="app">
-  
-      <!-- Barra lateral -->
       <nav class="sidebar">
-        <!-- Conteúdo da barra lateral aqui -->
         <div class="logo-container">
             <img src="@/assets/logo-unisinos-menu.png" alt="Logo Unisinos">
         </div>
@@ -46,7 +43,9 @@ export default {
             <li class="item">
               <RouterLink to="/registrarTCC">Registrar TCC</RouterLink>
             </li>
-          <li class="item">Visualizar Minha Banca</li>
+            <li class="item">
+              <RouterLink to="/visualizarMinhaBanca">Visualizar Minha Banca</RouterLink>
+            </li>
         </ul>
       </nav>
 
@@ -69,8 +68,8 @@ export default {
   }
 
   .logo-container {
-    display: flex; /* Faz o container do logo se comportar como um container flexível */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
   }   
 
